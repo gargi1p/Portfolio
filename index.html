@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gargi Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <h2>PORT<span>FOLIO</span></h2>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <div class="image">
+      <img src="https://media.licdn.com/dms/image/v2/D5603AQHU8q_Q6SPqew/profile-displayphoto-shrink_800_800/B56ZPYzWlBGkAc-/0/1734509162177?e=1755129600&v=beta&t=lTSi7LODxOFzmTfr0F7e_qfkE9IxBJ2mSNE87_ZWMBI" alt="Profile Picture">
+    </div>
+    <div class="content">
+      <h1>I am <span>Gargi Singh</span></h1>
+      <h2><span id="typing-role"></span></h2>
+      <p>Welcome to my official portfolio website.</p>
+      <br><a class="btn" href = "contact.html">Hire me</a>
+    </div>
+  </header>
+
+  <script>
+  const roles = ["Web Developer", "Frontend Developer", "Programmer", "UI/UX Enthusiast", "SQL Developer"];
+  const typingElement = document.getElementById("typing-role");
+  let roleIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+
+  function typeEffect() {
+    const currentRole = roles[roleIndex];
+    if (isDeleting) {
+      typingElement.textContent = currentRole.substring(0, charIndex--);
+    } else {
+      typingElement.textContent = currentRole.substring(0, charIndex++);
+    }
+
+    // Typing speed
+    let typeSpeed = isDeleting ? 70 : 120;
+
+    // If role is fully typed
+    if (!isDeleting && charIndex === currentRole.length) {
+      typeSpeed = 1000; // Wait before deleting
+      isDeleting = true;
+    }
+    // If role is fully deleted
+    else if (isDeleting && charIndex === 0) {
+      isDeleting = false;
+      roleIndex = (roleIndex + 1) % roles.length;
+    }
+
+    setTimeout(typeEffect, typeSpeed);
+  }
+
+  document.addEventListener("DOMContentLoaded", typeEffect);
+</script>
+
+</body>
+</html>
