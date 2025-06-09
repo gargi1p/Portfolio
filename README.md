@@ -15,13 +15,13 @@ Welcome to my portfolio website! This project serves as a digital representation
 
 You can run this project locally in just a few steps:
 
-## 1. Clone the repository
+### 1. Clone the repository
 git clone https://github.com/gargi1p/portfolio.git
 
 cd portfolio
 
 ### 2. Run  locally
-<h5>Option A: Using Live Server (Recommended)</h5>
+<h4>Option A: Using Live Server (Recommended)</h4>
 
 Open the project in VS Code
 
@@ -31,7 +31,7 @@ Install the Live Server extension (if not already installed)
 Right-click index.html → Select "Open with Live Server"
 
 
-<h5>Option B: Manual</h5>
+<h4>Option B: Manual</h4>
 
 
 Open index.html directly in your browser.
@@ -46,7 +46,6 @@ Resume is linked via Google Drive — update the Drive link in the HTML accordin
   <button class="resume-btn">View Resume</button>
 </a>
 ``` 
----
 
 ---
 
