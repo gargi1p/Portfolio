@@ -17,23 +17,30 @@ You can run this project locally in just a few steps:
 
 ## 1. Clone the repository
 git clone https://github.com/gargi1p/portfolio.git
+
 cd portfolio
 
 ### 2. Run  locally
 Option A: Using Live Server (Recommended)
+
 Open the project in VS Code
+
 
 Install the Live Server extension (if not already installed)
 
 Right-click index.html → Select "Open with Live Server"
 
+
 Option B: Manual
+
 Open index.html directly in your browser.
 
 ### 3. Customized as needed
 Update index.html to add or modify projects, contact links, or personal info.
 
 Resume is linked via Google Drive — update the Drive link in the HTML accordingly:
+
+```html
 <a href="https://drive.google.com/your-resume-link" target="_blank">
   <button class="resume-btn">View Resume</button>
 </a>
