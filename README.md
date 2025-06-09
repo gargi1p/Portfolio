@@ -34,8 +34,7 @@ Edit
 
 You can run this project locally in just a few steps:
 
-### 1. Clone the Repository
-```bash
+
 git clone https://github.com/gargi1p/portfolio.git
 cd portfolio
 
@@ -125,5 +124,3 @@ Integrate contact form with email service (e.g., EmailJS or Formspree)
 
 📝 License
 This project is open for learning and personal inspiration. Please credit if you use any part of it directly.
-
-
