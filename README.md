@@ -38,7 +38,10 @@ You can run this project locally in just a few steps:
 ```bash
 git clone https://github.com/gargi1p/portfolio.git
 cd portfolio
-2. Run Locally
+
+
+
+### 2. Run  locally
 Option A: Using Live Server (Recommended)
 Open the project in VS Code
 
@@ -51,7 +54,7 @@ Open index.html directly in your browser.
 
 Note: Resume button won't work unless hosted online or opened through a local server.
 
-3. Customize as Needed
+###3. Customize as Needed
 Update index.html to add or modify projects, contact links, or personal info.
 
 Resume is linked via Google Drive — update the Drive link in the HTML accordingly:
@@ -62,7 +65,8 @@ Edit
 <a href="https://drive.google.com/your-resume-link" target="_blank">
   <button class="resume-btn">View Resume</button>
 </a>
-🎨 Design Choices & UX Decisions
+
+###🎨 Design Choices & UX Decisions
 ✳️ Layout
 Designed to be simple and readable with logical sections: About, Projects, Skills, Education, and Contact.
 
